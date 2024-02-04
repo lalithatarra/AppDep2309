@@ -32,7 +32,7 @@ let sendSignupDataToServerThruJSON=async()=>{
         headers:myHeader,
     };
 
-   let JSONData=await fetch("http://localhost:4567/signup",reqOptions);
+   let JSONData=await fetch("/signup",reqOptions);
    
    let JSOData=await JSONData.json();
    console.log(JSOData);
@@ -57,7 +57,7 @@ let sendSignupDataToServerThruURLE=async()=>{
         headers:myHeader,
     };
 
-    let JSONData=await fetch("http://localhost:4567/signup",reqOptions);
+    let JSONData=await fetch("/signup",reqOptions);
 
     let JSOData=await JSONData.json();
     console.log(JSOData);
@@ -84,7 +84,7 @@ let sendSignupDataToServerThruFD=async()=>{
         body:dataToSend,
     };
 
-    let JSONData=await fetch("http://localhost:4567/signup",reqOptions);
+    let JSONData=await fetch("/signup",reqOptions);
 
     let JSOData=await JSONData.json();
 
